@@ -1,6 +1,6 @@
 import { saveSOSToIndexedDB, getCachedIncidents, cacheIncidentsLocally } from '../db/indexedDB.js';
 
-const API_BASE = '/api';
+const API_BASE = 'https://resqteam.onrender.com/api';
 
 export const submitSOS = async (sosPayload, isOnline) => {
   // If explicitly offline or offline simulator enabled, store directly in IndexedDB
