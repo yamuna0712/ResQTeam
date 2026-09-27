@@ -1,0 +1,16 @@
+{
+  "short_name": "resQteam",
+  "name": "resQteam - Offline-First Disaster Response",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#ef4444",
+  "display": "standalone",
+  "orientation": "portrait"
+}

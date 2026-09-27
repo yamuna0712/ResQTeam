@@ -1,0 +1,31 @@
+{
+  "name": "resqteam",
+  "version": "1.0.0",
+  "description": "Offline-First Disaster Response Network with MERN, IndexedDB Store-and-Forward Sync, and MongoDB 2dsphere Geospatial Engine",
+  "main": "server/src/server.js",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed",
+    "test:engine": "cd server && npm run test:engine",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "disaster-response",
+    "offline-first",
+    "store-and-forward",
+    "indexeddb",
+    "mongodb-2dsphere",
+    "bulkwrite",
+    "geospatial",
+    "pwa",
+    "service-workers"
+  ],
+  "author": "resQteam Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
